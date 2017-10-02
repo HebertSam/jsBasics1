@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function basic1(){
+            let x = [];
+            x.push("coding");
+            x.push("dojo");
+            x.push("rocks");
+            x.pop();
+            return x
+        }
+        let a = basic1();
+
+        console.log(a);
+
+        function basic2(){
+            const y = [];
+            y.push(88);
+            return y;
+        }
+        let b = basic2();
+        console.log(b);
+
+        function basic3(){
+            var z = [9, 10, 6, 5, -1, 20, 13, 2];
+            for (var i=0; i < z.length-1; i++){
+                console.log(z[i]);
+            }
+        }
+        basic3();
+
+        function basic4(){
+            let x = ['Kadie', 'Joe', 'Fritz', 'Pierre', 'Alphonso']
+            for (var i = 0; i < x.length; i++){
+               let xy = x[i];
+               console.log(xy.length);
+            }
+                
+        }
+        basic4();
+
+        function yell(string){
+            let up = string.toUpperCase();
+            return up;
+        }
+        let c = yell("hello world!");
+        console.log(c);
+        
+
+    </script>
+    
+</body>
+</html>
